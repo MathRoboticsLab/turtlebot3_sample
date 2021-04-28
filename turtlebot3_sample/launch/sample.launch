@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+	<!--Launch file parameters -->
+	
+	<!--Call other Launch file -->
+	<include file="$(find turtlebot3_bringup)/launch/turtlebot3_robot.launch" />
+	
+
+	<!--Node started by this launch -->
+	<node name="sample" pkg="turtlebot3_sample" type="sample" output="screen" />
+
+</launch>
